@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "catalog")
-public class Catalog implements Serializable { // https://devlog-wjdrbs96.tistory.com/268 에서 직렬화(Serializable) 개념 참고
+public class CatalogEntity implements Serializable { // https://devlog-wjdrbs96.tistory.com/268 에서 직렬화(Serializable) 개념 참고
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
