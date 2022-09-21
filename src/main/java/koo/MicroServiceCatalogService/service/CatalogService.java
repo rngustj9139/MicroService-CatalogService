@@ -1,4 +1,9 @@
 package koo.MicroServiceCatalogService.service;
 
-public class CatalogService {
+import koo.MicroServiceCatalogService.entity.CatalogEntity;
+
+public interface CatalogService {
+
+    Iterable<CatalogEntity> getAllCatalogs();
+
 }
