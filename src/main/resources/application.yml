@@ -17,6 +17,8 @@ spring:
       ddl-auto: create-drop # 기존의 테이블을 삭제하고 새로 만든다(종료시점에 테이블 DROP)
     show-sql: true
     generate-ddl: true
+    database: h2
+    defer-datasource-initialization: true # data.sql의 쿼리를 실행하여 데이터를 테이블에 등록하기 위해 선언
 
   datasource:
     driver-class-name: org.h2.Driver
